@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NorthEnd Cafe — Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark:       '#2c1a0e',
+              darker:     '#1a0f07',
+              darkest:    '#120a04',
+              gold:       '#c58f52',
+              goldhover:  '#a87540',
+              cream:      '#f5e6c8',
+              bg:         '#faf6f0',
+              muted:      '#9c8470',
+              text:       '#7a6355',
+              body:       '#5a4030',
+              border:     '#e0d5c8',
+              light:      '#f0e8dc',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans:  ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'DM Sans', sans-serif; background: #faf6f0; color: #2c1a0e; }
+    .font-serif { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="bg-brand-dark sticky top-0 z-50 flex items-center justify-between px-[5%] h-[60px]">
+  <a href="index.html" class="font-serif text-brand-cream text-xl tracking-wide no-underline">NorthEnd Cafe</a>
+  <ul class="hidden md:flex gap-8 list-none">
+    <li><a href="index.html"   class="text-brand-gold text-[11px] font-medium tracking-widest uppercase no-underline">Home</a></li>
+    <li><a href="about.html"   class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">About</a></li>
+    <li><a href="menu.html"    class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Menu</a></li>
+    <li><a href="blog.html"    class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Blog</a></li>
+    <li><a href="contact.html" class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="bg-brand-dark px-[5%] py-20 relative overflow-hidden">
+  <div class="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-brand-gold opacity-10 pointer-events-none"></div>
+  <div class="absolute -bottom-12 left-10 w-48 h-48 rounded-full bg-brand-gold opacity-[0.06] pointer-events-none"></div>
+  <p class="text-brand-gold text-[11px] tracking-[3px] uppercase font-medium mb-5">Toronto's favourite creative café</p>
+  <h1 class="font-serif text-brand-cream text-5xl md:text-6xl leading-tight max-w-xl mb-5">Your favourite corner of the city <em class="text-brand-gold not-italic">starts here.</em></h1>
+  <p class="text-brand-muted text-base leading-relaxed max-w-md mb-10 font-light">Specialty coffee, freshly baked pastries, and the calmest workspace in town — all under one roof at NorthEnd Cafe.</p>
+  <a href="landing.html" class="inline-block bg-brand-gold text-white text-[13px] font-medium tracking-wider uppercase px-9 py-4 hover:bg-brand-goldhover transition-colors no-underline">Claim Your Free Workspace Guide →</a>
+  <a href="menu.html"    class="inline-block border border-brand-gold text-brand-gold text-[13px] font-medium tracking-wider uppercase px-8 py-4 ml-4 hover:bg-brand-gold hover:text-white transition-colors no-underline">Explore the Menu</a>
+</section>
+
+<!-- BADGE STRIP -->
+<div class="bg-brand-gold grid grid-cols-2 md:grid-cols-4">
+  <div class="py-4 text-center text-white text-[11px] tracking-wider uppercase font-medium border-r border-white/25">Ethically Sourced Beans</div>
+  <div class="py-4 text-center text-white text-[11px] tracking-wider uppercase font-medium border-r border-white/25">Free High-Speed Wi-Fi</div>
+  <div class="py-4 text-center text-white text-[11px] tracking-wider uppercase font-medium border-r border-white/25">Baked Fresh Daily</div>
+  <div class="py-4 text-center text-white text-[11px] tracking-wider uppercase font-medium">Open 7 Days a Week</div>
+</div>
+
+<!-- VALUES -->
+<section class="px-[5%] py-16">
+  <p class="text-brand-gold text-[10px] tracking-[3px] uppercase font-medium mb-3">Why NorthEnd Cafe</p>
+  <h2 class="font-serif text-[34px] mb-3">A café built for how<br>you actually live.</h2>
+  <p class="text-brand-text font-light text-[15px] leading-relaxed max-w-lg">We designed every detail — the seating, the sound levels, the menu — for people who need more than just a coffee.</p>
+  <div class="mt-11 grid grid-cols-1 md:grid-cols-3 gap-px bg-brand-border">
+    <div class="bg-brand-bg hover:bg-white transition-colors p-9">
+      <div class="w-10 h-10 bg-brand-dark flex items-center justify-center text-lg mb-5">☕</div>
+      <h3 class="font-serif text-lg mb-3">Craft Coffee, Every Time</h3>
+      <p class="text-brand-text text-[14px] leading-relaxed font-light">Single-origin beans from Colombia, Ethiopia &amp; Guatemala. Trained baristas. A menu that changes with the seasons.</p>
+    </div>
+    <div class="bg-brand-bg hover:bg-white transition-colors p-9">
+      <div class="w-10 h-10 bg-brand-dark flex items-center justify-center text-lg mb-5">💻</div>
+      <h3 class="font-serif text-lg mb-3">Built for Makers &amp; Thinkers</h3>
+      <p class="text-brand-text text-[14px] leading-relaxed font-light">High-speed Wi-Fi, quiet zones, power at every seat, and a no-rush policy. Stay as long as you need.</p>
+    </div>
+    <div class="bg-brand-bg hover:bg-white transition-colors p-9">
+      <div class="w-10 h-10 bg-brand-dark flex items-center justify-center text-lg mb-5">🥐</div>
+      <h3 class="font-serif text-lg mb-3">Baked Fresh Daily</h3>
+      <p class="text-brand-text text-[14px] leading-relaxed font-light">Our pastries are made in-house every morning. No freezer stock — just flour, butter, and love.</p>
+    </div>
+  </div>
+</section>
+
+<div class="h-px bg-brand-border mx-[5%]"></div>
+
+<!-- SERVICES PREVIEW -->
+<section class="px-[5%] py-16">
+  <p class="text-brand-gold text-[10px] tracking-[3px] uppercase font-medium mb-3">What we offer</p>
+  <h2 class="font-serif text-[34px] mb-11">More than a coffee shop.</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+    <div class="border border-brand-border bg-white p-8 hover:border-brand-gold transition-colors">
+      <div class="font-serif text-[40px] text-brand-border font-bold mb-3">01</div>
+      <h3 class="text-[12px] font-medium tracking-widest uppercase mb-2">Specialty Beverages</h3>
+      <p class="text-brand-text text-[13px] leading-relaxed font-light mb-3">Pour-overs, lattes, cold brew, and seasonal specials — sourced ethically and made with care.</p>
+      <span class="text-brand-gold text-[12px] font-medium">From $3.50</span>
+    </div>
+    <div class="border border-brand-border bg-white p-8 hover:border-brand-gold transition-colors">
+      <div class="font-serif text-[40px] text-brand-border font-bold mb-3">02</div>
+      <h3 class="text-[12px] font-medium tracking-widest uppercase mb-2">Workspace Membership</h3>
+      <p class="text-brand-text text-[13px] leading-relaxed font-light mb-3">Priority seating, free weekly drinks, quiet zone access, and monthly tasting events.</p>
+      <span class="text-brand-gold text-[12px] font-medium">From $29/month</span>
+    </div>
+    <div class="border border-brand-border bg-white p-8 hover:border-brand-gold transition-colors">
+      <div class="font-serif text-[40px] text-brand-border font-bold mb-3">03</div>
+      <h3 class="text-[12px] font-medium tracking-widest uppercase mb-2">Artisan Pastries</h3>
+      <p class="text-brand-text text-[13px] leading-relaxed font-light mb-3">Almond croissants, cardamom buns, avocado toast on house sourdough — until sold out.</p>
+      <span class="text-brand-gold text-[12px] font-medium">From $3.75</span>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="bg-brand-dark px-[5%] py-16">
+  <p class="text-brand-gold text-[10px] tracking-[3px] uppercase font-medium mb-3">What people say</p>
+  <h2 class="font-serif text-brand-cream text-[34px] mb-10">Our regulars say it best.</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+    <div class="border border-white/10 p-7 hover:border-brand-gold/40 transition-colors">
+      <span class="text-brand-gold tracking-widest text-[13px] block mb-4">★★★★★</span>
+      <p class="text-brand-muted text-[14px] leading-relaxed italic font-light mb-4">"I've tried every café in the neighbourhood for remote work. NorthEnd is the only one I keep coming back to. The atmosphere is just right."</p>
+      <div class="text-brand-gold text-[12px] font-medium">— Priya S., UX Designer</div>
+    </div>
+    <div class="border border-white/10 p-7 hover:border-brand-gold/40 transition-colors">
+      <span class="text-brand-gold tracking-widest text-[13px] block mb-4">★★★★★</span>
+      <p class="text-brand-muted text-[14px] leading-relaxed italic font-light mb-4">"The oat latte is genuinely the best I've had in the city. My team holds our weekly stand-ups from their back corner."</p>
+      <div class="text-brand-gold text-[12px] font-medium">— James T., Startup Founder</div>
+    </div>
+    <div class="border border-white/10 p-7 hover:border-brand-gold/40 transition-colors">
+      <span class="text-brand-gold tracking-widest text-[13px] block mb-4">★★★★★</span>
+      <p class="text-brand-muted text-[14px] leading-relaxed italic font-light mb-4">"Quiet enough to focus, lively enough to feel human. The almond croissants are genuinely dangerous."</p>
+      <div class="text-brand-gold text-[12px] font-medium">— Daniela M., Writer</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="bg-brand-gold px-[5%] py-14 flex flex-col md:flex-row items-center justify-between gap-6">
+  <h2 class="font-serif text-white text-3xl max-w-md leading-snug">Get our free Remote Worker's Café Survival Guide</h2>
+  <a href="landing.html" class="bg-white text-brand-dark text-[13px] font-medium tracking-wider uppercase px-8 py-4 hover:bg-brand-cream transition-colors no-underline whitespace-nowrap">Download Free →</a>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-brand-darker px-[5%] py-7 flex flex-col md:flex-row justify-between items-center gap-4">
+  <div class="font-serif text-brand-cream text-base">NorthEnd Cafe</div>
+  <div class="flex gap-6">
+    <a href="about.html"   class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">About</a>
+    <a href="contact.html" class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Contact</a>
+    <a href="#disclaimer"  class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Disclaimer</a>
+  </div>
+</footer>
+<div id="disclaimer" class="bg-brand-darkest px-[5%] py-5">
+  <p class="text-[11px] text-[#3a2a1a] leading-relaxed font-light">The information provided on this website is intended for educational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the university does not guarantee its completeness or effectiveness. This website will be deactivated once the course is completed. Some images used on this site have been sourced from the internet and are included for educational and practice purposes only. If you are the copyright owner of any image and believe it has been used without proper attribution, please contact us. The views expressed on this site do not necessarily reflect the official policies or positions of the university. The university is not responsible for any errors or omissions or the results obtained from using this information. By using this website, you acknowledge and agree to these terms.</p>
+</div>
+
+</body>
+</html>

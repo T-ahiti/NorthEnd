@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NorthEnd Cafe — Menu & Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#2c1a0e', darker: '#1a0f07', darkest: '#120a04',
+              gold: '#c58f52', goldhover: '#a87540', cream: '#f5e6c8',
+              bg: '#faf6f0', muted: '#9c8470', text: '#7a6355',
+              body: '#5a4030', border: '#e0d5c8', light: '#f0e8dc',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>body { font-family: 'DM Sans', sans-serif; background: #faf6f0; color: #2c1a0e; }</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="bg-brand-dark sticky top-0 z-50 flex items-center justify-between px-[5%] h-[60px]">
+  <a href="index.html" class="font-serif text-brand-cream text-xl tracking-wide no-underline">NorthEnd Cafe</a>
+  <ul class="hidden md:flex gap-8 list-none">
+    <li><a href="index.html"   class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Home</a></li>
+    <li><a href="about.html"   class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">About</a></li>
+    <li><a href="menu.html"    class="text-brand-gold  text-[11px] font-medium tracking-widest uppercase no-underline">Menu</a></li>
+    <li><a href="blog.html"    class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Blog</a></li>
+    <li><a href="contact.html" class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="bg-brand-dark px-[5%] py-16">
+  <p class="text-brand-gold text-[11px] tracking-[3px] uppercase font-medium mb-4">What we offer</p>
+  <h1 class="font-serif text-brand-cream text-5xl leading-tight mb-4">More than a<br>coffee shop.</h1>
+  <p class="text-brand-muted text-[15px] leading-relaxed max-w-lg font-light">Three ways to enjoy NorthEnd Cafe — from a single perfect espresso to a full monthly membership built around your remote work lifestyle.</p>
+</section>
+
+<!-- SERVICE 1: BEVERAGES -->
+<section class="px-[5%] py-16">
+  <p class="text-brand-gold text-[10px] tracking-[3px] uppercase font-medium mb-3">Service 01</p>
+  <h2 class="font-serif text-[34px] mb-2">Specialty Beverages</h2>
+  <p class="text-brand-text text-[14px] font-light mb-8">Ethically sourced beans from Colombia, Ethiopia &amp; Guatemala. Made by trained baristas, every time.</p>
+
+  <!-- Photo placeholder — replace with: <img src="your-photo.jpg" class="w-full h-56 object-cover mb-8" alt="Barista"> -->
+  <div class="w-full h-48 mb-8 flex items-center justify-center text-white/40 text-[12px] tracking-widest uppercase" style="background: linear-gradient(135deg,#2c1a0e,#4a2e1a,#c58f52)">
+    Add photo — download free from unsplash.com (search "barista espresso")
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <div class="bg-white border border-brand-border p-6 flex justify-between items-start hover:border-brand-gold transition-colors">
+      <div><h4 class="text-[15px] font-medium mb-1">Signature Ember Latte</h4><p class="text-brand-text text-[13px] font-light">Espresso, caramelized honey, oat milk</p></div>
+      <span class="text-brand-gold text-[14px] font-medium ml-5 flex-shrink-0">$6.50</span>
+    </div>
+    <div class="bg-white border border-brand-border p-6 flex justify-between items-start hover:border-brand-gold transition-colors">
+      <div><h4 class="text-[15px] font-medium mb-1">Ethiopian Pour-Over</h4><p class="text-brand-text text-[13px] font-light">Floral, light-roast, single-origin</p></div>
+      <span class="text-brand-gold text-[14px] font-medium ml-5 flex-shrink-0">$6.00</span>
+    </div>
+    <div class="bg-white border border-brand-border p-6 flex justify-between items-start hover:border-brand-gold transition-colors">
+      <div><h4 class="text-[15px] font-medium mb-1">Matcha Cloud Latte</h4><p class="text-brand-text text-[13px] font-light">Ceremonial matcha, oat foam, honey</p></div>
+      <span class="text-brand-gold text-[14px] font-medium ml-5 flex-shrink-0">$6.50</span>
+    </div>
+    <div class="bg-white border border-brand-border p-6 flex justify-between items-start hover:border-brand-gold transition-colors">
+      <div><h4 class="text-[15px] font-medium mb-1">Cold Brew Float</h4><p class="text-brand-text text-[13px] font-light">18-hour cold brew, vanilla oat cream</p></div>
+      <span class="text-brand-gold text-[14px] font-medium ml-5 flex-shrink-0">$7.00</span>
+    </div>
+    <div class="bg-white border border-brand-border p-6 flex justify-between items-start hover:border-brand-gold transition-colors">
+      <div><h4 class="text-[15px] font-medium mb-1">Classic Double Espresso</h4><p class="text-brand-text text-[13px] font-light">Colombian blend, rich and balanced</p></div>
+      <span class="text-brand-gold text-[14px] font-medium ml-5 flex-shrink-0">$3.50</span>
+    </div>
+    <div class="bg-white border border-brand-border p-6 flex justify-between items-start hover:border-brand-gold transition-colors">
+      <div><h4 class="text-[15px] font-medium mb-1">Seasonal Special</h4><p class="text-brand-text text-[13px] font-light">Ask your barista what's on today</p></div>
+      <span class="text-brand-gold text-[14px] font-medium ml-5 flex-shrink-0">$6.00+</span>
+    </div>
+  </div>
+</section>
+
+<div class="h-px bg-brand-border mx-[5%]"></div>
+
+<!-- SERVICE 2: MEMBERSHIP -->
+<section class="px-[5%] py-16">
+  <p class="text-brand-gold text-[10px] tracking-[3px] uppercase font-medium mb-3">Service 02</p>
+  <h2 class="font-serif text-[34px] mb-2">Remote Work Membership</h2>
+  <p class="text-brand-text text-[14px] font-light mb-10">For regulars who make NorthEnd Cafe their office. Priority seating, perks, and community — all included.</p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+    <!-- Basic -->
+    <div class="border border-brand-border bg-white p-8 hover:border-brand-gold transition-colors">
+      <span class="text-[10px] tracking-[2px] uppercase text-brand-text font-medium block mb-2">Basic</span>
+      <div class="font-serif text-[36px] mb-1">$29<span class="text-[14px] font-sans text-brand-text font-light">/month</span></div>
+      <ul class="my-5 space-y-2 list-none">
+        <li class="text-[13px] text-brand-body font-light py-2 border-b border-brand-light flex gap-2"><span class="text-brand-gold font-medium">✓</span> Priority quiet zone seating</li>
+        <li class="text-[13px] text-brand-body font-light py-2 border-b border-brand-light flex gap-2"><span class="text-brand-gold font-medium">✓</span> 10% off all orders</li>
+        <li class="text-[13px] text-brand-body font-light py-2 flex gap-2"><span class="text-brand-gold font-medium">✓</span> Monthly member newsletter</li>
+      </ul>
+      <a href="landing.html" class="block w-full bg-brand-dark text-brand-cream text-center text-[12px] font-medium tracking-wider uppercase py-3.5 no-underline hover:bg-[#4a2e1a] transition-colors">Get Started →</a>
+    </div>
+
+    <!-- Pro (featured) -->
+    <div class="border-2 border-brand-gold bg-white p-8 relative">
+      <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-gold text-white text-[9px] font-medium tracking-[1.5px] uppercase px-3.5 py-1.5 whitespace-nowrap">Most Popular</div>
+      <span class="text-[10px] tracking-[2px] uppercase text-brand-text font-medium block mb-2">Pro</span>
+      <div class="font-serif text-[36px] mb-1">$49<span class="text-[14px] font-sans text-brand-text font-light">/month</span></div>
+      <ul class="my-5 space-y-2 list-none">
+        <li class="text-[13px] text-brand-body font-light py-2 border-b border-brand-light flex gap-2"><span class="text-brand-gold font-medium">✓</span> All Basic perks included</li>
+        <li class="text-[13px] text-brand-body font-light py-2 border-b border-brand-light flex gap-2"><span class="text-brand-gold font-medium">✓</span> 1 free drink every week</li>
+        <li class="text-[13px] text-brand-body font-light py-2 border-b border-brand-light flex gap-2"><span class="text-brand-gold font-medium">✓</span> Monthly tasting events</li>
+        <li class="text-[13px] text-brand-body font-light py-2 flex gap-2"><span class="text-brand-gold font-medium">✓</span> Deep Work Hours access</li>
+      </ul>
+      <a href="landing.html" class="block w-full bg-brand-gold text-white text-center text-[12px] font-medium tracking-wider uppercase py-3.5 no-underline hover:bg-brand-goldhover transition-colors">Get Started →</a>
+    </div>
+
+    <!-- Team -->
+    <div class="border border-brand-border bg-white p-8 hover:border-brand-gold transition-colors">
+      <span class="text-[10px] tracking-[2px] uppercase text-brand-text font-medium block mb-2">Team (up to 5)</span>
+      <div class="font-serif text-[36px] mb-1">$119<span class="text-[14px] font-sans text-brand-text font-light">/month</span></div>
+      <ul class="my-5 space-y-2 list-none">
+        <li class="text-[13px] text-brand-body font-light py-2 border-b border-brand-light flex gap-2"><span class="text-brand-gold font-medium">✓</span> All Pro perks × 5 people</li>
+        <li class="text-[13px] text-brand-body font-light py-2 border-b border-brand-light flex gap-2"><span class="text-brand-gold font-medium">✓</span> Private table reservations</li>
+        <li class="text-[13px] text-brand-body font-light py-2 flex gap-2"><span class="text-brand-gold font-medium">✓</span> Monthly group tasting event</li>
+      </ul>
+      <a href="landing.html" class="block w-full bg-brand-dark text-brand-cream text-center text-[12px] font-medium tracking-wider uppercase py-3.5 no-underline hover:bg-[#4a2e1a] transition-colors">Get Started →</a>
+    </div>
+
+  </div>
+</section>
+
+<div class="h-px bg-brand-border mx-[5%]"></div>
+
+<!-- SERVICE 3: PASTRIES -->
+<section class="px-[5%] py-16">
+  <p class="text-brand-gold text-[10px] tracking-[3px] uppercase font-medium mb-3">Service 03</p>
+  <h2 class="font-serif text-[34px] mb-2">Artisan Pastries &amp; Light Bites</h2>
+  <p class="text-brand-text text-[14px] font-light mb-10">Baked in-house every morning. Available until sold out — come early.</p>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="bg-white border border-brand-border p-5 text-center hover:border-brand-gold transition-colors">
+      <span class="text-3xl block mb-3">🥐</span>
+      <h4 class="text-[13px] font-medium mb-1">Almond Croissant</h4>
+      <p class="text-brand-text text-[12px] font-light mb-2">Buttery, flaky, in-house</p>
+      <span class="text-brand-gold text-[13px] font-medium">$4.50</span>
+    </div>
+    <div class="bg-white border border-brand-border p-5 text-center hover:border-brand-gold transition-colors">
+      <span class="text-3xl block mb-3">🌿</span>
+      <h4 class="text-[13px] font-medium mb-1">Cardamom Bun</h4>
+      <p class="text-brand-text text-[12px] font-light mb-2">Spiced, glazed, soft</p>
+      <span class="text-brand-gold text-[13px] font-medium">$4.00</span>
+    </div>
+    <div class="bg-white border border-brand-border p-5 text-center hover:border-brand-gold transition-colors">
+      <span class="text-3xl block mb-3">🥑</span>
+      <h4 class="text-[13px] font-medium mb-1">Avocado Toast</h4>
+      <p class="text-brand-text text-[12px] font-light mb-2">House sourdough, chilli</p>
+      <span class="text-brand-gold text-[13px] font-medium">$10.50</span>
+    </div>
+    <div class="bg-white border border-brand-border p-5 text-center hover:border-brand-gold transition-colors">
+      <span class="text-3xl block mb-3">🍌</span>
+      <h4 class="text-[13px] font-medium mb-1">Banana Walnut Loaf</h4>
+      <p class="text-brand-text text-[12px] font-light mb-2">Slice or full loaf</p>
+      <span class="text-brand-gold text-[13px] font-medium">$3.75</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="bg-brand-gold px-[5%] py-14 text-center">
+  <h2 class="font-serif text-white text-3xl mb-2">Not sure where to start?</h2>
+  <p class="text-white/85 text-[14px] font-light mb-7">Download our free guide and see why remote workers love NorthEnd Cafe.</p>
+  <a href="landing.html" class="inline-block bg-white text-brand-gold text-[13px] font-medium tracking-wider uppercase px-8 py-4 no-underline hover:bg-brand-cream transition-colors">Get the Free Guide →</a>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-brand-darker px-[5%] py-7 flex flex-col md:flex-row justify-between items-center gap-4">
+  <div class="font-serif text-brand-cream text-base">NorthEnd Cafe</div>
+  <div class="flex gap-6">
+    <a href="index.html"   class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Home</a>
+    <a href="contact.html" class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Contact</a>
+    <a href="#disclaimer"  class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Disclaimer</a>
+  </div>
+</footer>
+<div id="disclaimer" class="bg-brand-darkest px-[5%] py-5">
+  <p class="text-[11px] text-[#3a2a1a] leading-relaxed font-light">The information provided on this website is intended for educational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the university does not guarantee its completeness or effectiveness. This website will be deactivated once the course is completed. Some images used on this site have been sourced from the internet and are included for educational and practice purposes only. The views expressed on this site do not necessarily reflect the official policies or positions of the university. By using this website, you acknowledge and agree to these terms.</p>
+</div>
+
+</body>
+</html>

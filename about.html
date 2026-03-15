@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NorthEnd Cafe — About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#2c1a0e', darker: '#1a0f07', darkest: '#120a04',
+              gold: '#c58f52', goldhover: '#a87540', cream: '#f5e6c8',
+              bg: '#faf6f0', muted: '#9c8470', text: '#7a6355',
+              body: '#5a4030', border: '#e0d5c8', light: '#f0e8dc',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>body { font-family: 'DM Sans', sans-serif; background: #faf6f0; color: #2c1a0e; }</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="bg-brand-dark sticky top-0 z-50 flex items-center justify-between px-[5%] h-[60px]">
+  <a href="index.html" class="font-serif text-brand-cream text-xl tracking-wide no-underline">NorthEnd Cafe</a>
+  <ul class="hidden md:flex gap-8 list-none">
+    <li><a href="index.html"   class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Home</a></li>
+    <li><a href="about.html"   class="text-brand-gold text-[11px] font-medium tracking-widest uppercase no-underline">About</a></li>
+    <li><a href="menu.html"    class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Menu</a></li>
+    <li><a href="blog.html"    class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Blog</a></li>
+    <li><a href="contact.html" class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="bg-brand-dark px-[5%] py-16 relative overflow-hidden">
+  <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-brand-gold opacity-10 pointer-events-none"></div>
+  <p class="text-brand-gold text-[11px] tracking-[3px] uppercase font-medium mb-4">Our story</p>
+  <h1 class="font-serif text-brand-cream text-5xl leading-tight mb-4">We made the café<br>we always wanted.</h1>
+  <p class="text-brand-muted text-[15px] leading-relaxed max-w-xl font-light">Founded in Toronto in 2021, NorthEnd Cafe was built on a simple belief: a great café should be more than a place to grab coffee — it should be where ideas take shape and community forms.</p>
+</section>
+
+<!-- OVERVIEW -->
+<section class="px-[5%] py-16">
+  <p class="text-brand-gold text-[10px] tracking-[3px] uppercase font-medium mb-3">Who we are</p>
+  <h2 class="font-serif text-[34px] mb-4">Mission, vision &amp; values</h2>
+  <p class="text-brand-body text-[15px] leading-[1.85] font-light max-w-2xl">Our mission is to create a warm, inclusive space where everyone — from the solo entrepreneur to the study group — feels genuinely at home. We source our beans ethically from small farms in Colombia, Ethiopia, and Guatemala, and partner with local bakers to keep our menu rooted in the community.</p>
+  <p class="text-brand-body text-[15px] leading-[1.85] font-light max-w-2xl mt-4">Our vision is to become the most trusted neighbourhood café brand for creative professionals across Canada.</p>
+  <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-5">
+    <div class="border-l-[3px] border-brand-gold pl-5">
+      <strong class="block text-[14px] font-medium mb-1">Quality</strong>
+      <span class="text-brand-text text-[13px] font-light">No shortcuts, ever. In the cup and in the space.</span>
+    </div>
+    <div class="border-l-[3px] border-brand-gold pl-5">
+      <strong class="block text-[14px] font-medium mb-1">Community</strong>
+      <span class="text-brand-text text-[13px] font-light">Over competition, always. We grow with our neighbours.</span>
+    </div>
+    <div class="border-l-[3px] border-brand-gold pl-5">
+      <strong class="block text-[14px] font-medium mb-1">Sustainability</strong>
+      <span class="text-brand-text text-[13px] font-light">In every sourcing, packaging, and staffing decision.</span>
+    </div>
+  </div>
+</section>
+
+<div class="h-px bg-brand-border mx-[5%]"></div>
+
+<!-- TEAM -->
+<section class="px-[5%] py-16">
+  <p class="text-brand-gold text-[10px] tracking-[3px] uppercase font-medium mb-3">The people behind it</p>
+  <h2 class="font-serif text-[34px] mb-10">Founders &amp; leadership</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="flex gap-6 bg-white border border-brand-border p-8 hover:border-brand-gold transition-colors">
+      <div class="w-[72px] h-[72px] bg-brand-dark flex-shrink-0 flex items-center justify-center font-serif text-brand-gold text-2xl font-bold">JC</div>
+      <div>
+        <h3 class="font-serif text-xl mb-1">Jamie Caldwell</h3>
+        <span class="text-brand-gold text-[11px] tracking-wider uppercase font-medium block mb-3">Co-Founder &amp; Head of Operations</span>
+        <p class="text-brand-text text-[13px] leading-relaxed font-light">Six years in hospitality before co-founding NorthEnd Cafe. Diploma in Hospitality Management. Oversees daily operations, staff training, and sourcing partnerships. Deeply obsessed with Colombian single-origin beans.</p>
+      </div>
+    </div>
+    <div class="flex gap-6 bg-white border border-brand-border p-8 hover:border-brand-gold transition-colors">
+      <div class="w-[72px] h-[72px] bg-brand-dark flex-shrink-0 flex items-center justify-center font-serif text-brand-gold text-2xl font-bold">ME</div>
+      <div>
+        <h3 class="font-serif text-xl mb-1">Morgan Ellis</h3>
+        <span class="text-brand-gold text-[11px] tracking-wider uppercase font-medium block mb-3">Co-Founder &amp; Creative Director</span>
+        <p class="text-brand-text text-[13px] leading-relaxed font-light">Background in interior design and brand strategy. Responsible for everything you see and feel when you walk through the door — from the warm lighting to the hand-lettered chalkboard menus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="h-px bg-brand-border mx-[5%]"></div>
+
+<!-- TIMELINE -->
+<section class="px-[5%] py-16">
+  <p class="text-brand-gold text-[10px] tracking-[3px] uppercase font-medium mb-3">Our journey</p>
+  <h2 class="font-serif text-[34px] mb-10">Milestones</h2>
+  <div class="pl-7 border-l border-brand-border space-y-8">
+    <div class="relative">
+      <div class="absolute -left-[33px] top-[7px] w-[10px] h-[10px] bg-brand-gold rounded-full"></div>
+      <span class="text-brand-gold text-[12px] font-medium tracking-wider uppercase block mb-1">2021</span>
+      <h4 class="text-[15px] font-medium mb-1">NorthEnd Cafe opens its first location</h4>
+      <p class="text-brand-text text-[13px] font-light">742 Brewster Avenue, Toronto — a 900 sq ft corner space we renovated ourselves.</p>
+    </div>
+    <div class="relative">
+      <div class="absolute -left-[33px] top-[7px] w-[10px] h-[10px] bg-brand-gold rounded-full"></div>
+      <span class="text-brand-gold text-[12px] font-medium tracking-wider uppercase block mb-1">2022</span>
+      <h4 class="text-[15px] font-medium mb-1">Launch of the Remote Worker Membership Package</h4>
+      <p class="text-brand-text text-[13px] font-light">Designed for the regulars who had already made us their daily office.</p>
+    </div>
+    <div class="relative">
+      <div class="absolute -left-[33px] top-[7px] w-[10px] h-[10px] bg-brand-gold rounded-full"></div>
+      <span class="text-brand-gold text-[12px] font-medium tracking-wider uppercase block mb-1">2023</span>
+      <h4 class="text-[15px] font-medium mb-1">"Best Local Café" — City Readers' Choice Awards</h4>
+      <p class="text-brand-text text-[13px] font-light">Voted by the community we've been proud to serve since day one.</p>
+    </div>
+    <div class="relative">
+      <div class="absolute -left-[33px] top-[7px] w-[10px] h-[10px] bg-brand-gold rounded-full"></div>
+      <span class="text-brand-gold text-[12px] font-medium tracking-wider uppercase block mb-1">2024</span>
+      <h4 class="text-[15px] font-medium mb-1">Second location opens &amp; seasonal menu program launches</h4>
+      <p class="text-brand-text text-[13px] font-light">Expanding our footprint while keeping our local roots.</p>
+    </div>
+  </div>
+</section>
+
+<div class="h-px bg-brand-border mx-[5%]"></div>
+
+<!-- AWARDS -->
+<section class="px-[5%] py-16">
+  <p class="text-brand-gold text-[10px] tracking-[3px] uppercase font-medium mb-3">Recognition</p>
+  <h2 class="font-serif text-[34px] mb-10">Awards &amp; achievements</h2>
+  <div class="flex flex-wrap gap-4">
+    <div class="flex-1 min-w-[200px] bg-white border border-brand-border p-5 flex items-center gap-4 hover:border-brand-gold transition-colors">
+      <div class="w-10 h-10 bg-brand-gold flex items-center justify-center text-lg flex-shrink-0">🏆</div>
+      <div><strong class="block text-[14px] font-medium mb-1">Best Local Café 2023</strong><span class="text-brand-text text-[12px] font-light">City Readers' Choice Awards</span></div>
+    </div>
+    <div class="flex-1 min-w-[200px] bg-white border border-brand-border p-5 flex items-center gap-4 hover:border-brand-gold transition-colors">
+      <div class="w-10 h-10 bg-brand-gold flex items-center justify-center text-lg flex-shrink-0">🌿</div>
+      <div><strong class="block text-[14px] font-medium mb-1">Ethical Sourcing Certificate</strong><span class="text-brand-text text-[12px] font-light">SCA Partner Program, 2022</span></div>
+    </div>
+    <div class="flex-1 min-w-[200px] bg-white border border-brand-border p-5 flex items-center gap-4 hover:border-brand-gold transition-colors">
+      <div class="w-10 h-10 bg-brand-gold flex items-center justify-center text-lg flex-shrink-0">⭐</div>
+      <div><strong class="block text-[14px] font-medium mb-1">4.9 / 5 on Google</strong><span class="text-brand-text text-[12px] font-light">Over 800 verified reviews</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-brand-darker px-[5%] py-7 flex flex-col md:flex-row justify-between items-center gap-4">
+  <div class="font-serif text-brand-cream text-base">NorthEnd Cafe</div>
+  <div class="flex gap-6">
+    <a href="index.html"   class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Home</a>
+    <a href="contact.html" class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Contact</a>
+    <a href="#disclaimer"  class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Disclaimer</a>
+  </div>
+</footer>
+<div id="disclaimer" class="bg-brand-darkest px-[5%] py-5">
+  <p class="text-[11px] text-[#3a2a1a] leading-relaxed font-light">The information provided on this website is intended for educational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the university does not guarantee its completeness or effectiveness. This website will be deactivated once the course is completed. Some images used on this site have been sourced from the internet and are included for educational and practice purposes only. The views expressed on this site do not necessarily reflect the official policies or positions of the university. By using this website, you acknowledge and agree to these terms.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NorthEnd Cafe — Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#2c1a0e', darker: '#1a0f07', darkest: '#120a04',
+              gold: '#c58f52', goldhover: '#a87540', cream: '#f5e6c8',
+              bg: '#faf6f0', muted: '#9c8470', text: '#7a6355',
+              body: '#5a4030', border: '#e0d5c8', light: '#f0e8dc',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>body { font-family: 'DM Sans', sans-serif; background: #faf6f0; color: #2c1a0e; }</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="bg-brand-dark sticky top-0 z-50 flex items-center justify-between px-[5%] h-[60px]">
+  <a href="index.html" class="font-serif text-brand-cream text-xl tracking-wide no-underline">NorthEnd Cafe</a>
+  <ul class="hidden md:flex gap-8 list-none">
+    <li><a href="index.html"   class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Home</a></li>
+    <li><a href="about.html"   class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">About</a></li>
+    <li><a href="menu.html"    class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Menu</a></li>
+    <li><a href="blog.html"    class="text-brand-gold  text-[11px] font-medium tracking-widest uppercase no-underline">Blog</a></li>
+    <li><a href="contact.html" class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="bg-brand-dark px-[5%] py-16">
+  <p class="text-brand-gold text-[11px] tracking-[3px] uppercase font-medium mb-4">The NorthEnd Cafe blog</p>
+  <h1 class="font-serif text-brand-cream text-5xl leading-tight mb-4">Stories, tips &amp;<br>coffee wisdom.</h1>
+  <p class="text-brand-muted text-[15px] leading-relaxed max-w-lg font-light">Educational reads about coffee culture, remote work habits, and making the most of every cup and every workday.</p>
+</section>
+
+<!-- BLOG LAYOUT -->
+<div class="px-[5%] py-12 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-0">
+
+  <!-- MAIN -->
+  <div class="lg:pr-10">
+
+    <!-- POST 1 -->
+    <div class="bg-white border border-brand-border mb-8 hover:border-brand-gold transition-colors">
+      <!-- Replace with: <img src="your-photo.jpg" class="w-full h-52 object-cover" alt="Coffee"> -->
+      <div class="w-full h-52 flex items-center justify-center text-white/35 text-[11px] tracking-widest uppercase" style="background:linear-gradient(135deg,#1a0f07,#3a2010,#c58f52)">
+        Add photo — search "pour over coffee" on unsplash.com
+      </div>
+      <div class="p-8">
+        <div class="flex flex-wrap gap-3 items-center mb-4">
+          <span class="bg-brand-dark text-brand-gold text-[10px] px-3 py-1.5 tracking-wider uppercase font-medium">Coffee Education</span>
+          <span class="text-brand-muted text-[12px] font-light">March 2025</span>
+          <span class="text-brand-muted text-[12px] font-light">· 6 min read</span>
+        </div>
+        <!-- Keywords box (for assignment grading) -->
+        <div class="bg-brand-bg border border-brand-border px-4 py-3 mb-4 flex flex-wrap gap-2 items-center">
+          <span class="text-[10px] text-brand-muted tracking-wider uppercase font-medium mr-1">Keywords:</span>
+          <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">specialty coffee brewing</span>
+          <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">how to brew coffee at home</span>
+          <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">pour-over coffee guide</span>
+          <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">coffee brewing methods</span>
+          <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">best coffee for beginners</span>
+        </div>
+        <h2 class="font-serif text-[24px] leading-snug mb-4 hover:text-brand-gold transition-colors cursor-pointer">The Beginner's Guide to Brewing Specialty Coffee at Home (Without Any Fancy Equipment)</h2>
+        <p class="text-brand-text text-[14px] leading-relaxed font-light mb-6">You've had that cup — the one that stopped you mid-sip and made you think, wait, coffee can actually taste like this? With a few simple principles and basic tools, you can brew specialty-level coffee at home. This guide shows you exactly how.</p>
+        <div class="flex flex-wrap justify-between items-center pt-4 border-t border-brand-light gap-3">
+          <div class="flex flex-wrap gap-2">
+            <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Brewing</span>
+            <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Pour-over</span>
+            <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Beginner</span>
+          </div>
+          <a href="#" class="text-brand-gold text-[13px] font-medium no-underline hover:text-brand-goldhover transition-colors">Read More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- POST 2 -->
+    <div class="bg-white border border-brand-border mb-8 hover:border-brand-gold transition-colors">
+      <div class="w-full h-52 flex items-center justify-center text-white/35 text-[11px] tracking-widest uppercase" style="background:linear-gradient(135deg,#0f1a24,#1a3048,#4a8ab4)">
+        Add photo — search "laptop cafe remote work" on unsplash.com
+      </div>
+      <div class="p-8">
+        <div class="flex flex-wrap gap-3 items-center mb-4">
+          <span class="bg-brand-dark text-brand-gold text-[10px] px-3 py-1.5 tracking-wider uppercase font-medium">Productivity</span>
+          <span class="text-brand-muted text-[12px] font-light">February 2025</span>
+          <span class="text-brand-muted text-[12px] font-light">· 7 min read</span>
+        </div>
+        <div class="bg-brand-bg border border-brand-border px-4 py-3 mb-4 flex flex-wrap gap-2 items-center">
+          <span class="text-[10px] text-brand-muted tracking-wider uppercase font-medium mr-1">Keywords:</span>
+          <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">working from a café</span>
+          <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">remote work productivity tips</span>
+          <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">coffee shop productivity</span>
+          <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">work from coffee shop</span>
+          <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">best café for working</span>
+        </div>
+        <h2 class="font-serif text-[24px] leading-snug mb-4 hover:text-brand-gold transition-colors cursor-pointer">7 Things Productive Remote Workers Always Do at a Coffee Shop (That Most People Don't)</h2>
+        <p class="text-brand-text text-[14px] leading-relaxed font-light mb-6">If you've ever set up your laptop at a café with full intentions of crushing your to-do list — only to close it two hours later with nothing done — you are not alone. Here's what the most productive café workers actually do differently.</p>
+        <div class="flex flex-wrap justify-between items-center pt-4 border-t border-brand-light gap-3">
+          <div class="flex flex-wrap gap-2">
+            <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Remote Work</span>
+            <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Productivity</span>
+            <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Deep Work</span>
+          </div>
+          <a href="#" class="text-brand-gold text-[13px] font-medium no-underline hover:text-brand-goldhover transition-colors">Read More →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="lg:border-l lg:border-brand-border lg:pl-10 pt-0">
+
+    <!-- CTA -->
+    <div class="bg-brand-dark p-7 text-center mb-10">
+      <h3 class="font-serif text-brand-cream text-[17px] leading-snug mb-2">Free Guide for Remote Workers</h3>
+      <p class="text-brand-muted text-[12px] leading-relaxed font-light mb-5">Download our 8-page Café Survival Guide — practical tips, a printable checklist, and more.</p>
+      <a href="landing.html" class="block bg-brand-gold text-white text-[12px] font-medium tracking-wider uppercase py-3 no-underline hover:bg-brand-goldhover transition-colors">Download Free →</a>
+    </div>
+
+    <!-- Recent -->
+    <div class="mb-10">
+      <span class="text-brand-gold text-[10px] tracking-[2px] uppercase font-medium block mb-4 pb-3 border-b border-brand-border">Recent posts</span>
+      <div class="flex gap-3.5 mb-4 pb-4 border-b border-brand-light cursor-pointer group">
+        <div class="w-[52px] h-[52px] flex-shrink-0" style="background:linear-gradient(135deg,#1a0f07,#c58f52)"></div>
+        <div><h4 class="text-[13px] font-medium leading-snug mb-1 group-hover:text-brand-gold transition-colors">Beginner's Guide to Brewing Specialty Coffee</h4><span class="text-[11px] text-brand-muted font-light">Coffee Education · 6 min</span></div>
+      </div>
+      <div class="flex gap-3.5 cursor-pointer group">
+        <div class="w-[52px] h-[52px] flex-shrink-0" style="background:linear-gradient(135deg,#0f1a24,#4a8ab4)"></div>
+        <div><h4 class="text-[13px] font-medium leading-snug mb-1 group-hover:text-brand-gold transition-colors">7 Things Productive Remote Workers Do</h4><span class="text-[11px] text-brand-muted font-light">Productivity · 7 min</span></div>
+      </div>
+    </div>
+
+    <!-- Tags -->
+    <div>
+      <span class="text-brand-gold text-[10px] tracking-[2px] uppercase font-medium block mb-4 pb-3 border-b border-brand-border">Browse by topic</span>
+      <div class="flex flex-wrap gap-2">
+        <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Coffee</span>
+        <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Brewing</span>
+        <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Remote Work</span>
+        <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Productivity</span>
+        <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Pour-over</span>
+        <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Tips</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-brand-darker px-[5%] py-7 flex flex-col md:flex-row justify-between items-center gap-4">
+  <div class="font-serif text-brand-cream text-base">NorthEnd Cafe</div>
+  <div class="flex gap-6">
+    <a href="index.html"   class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Home</a>
+    <a href="contact.html" class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Contact</a>
+    <a href="#disclaimer"  class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Disclaimer</a>
+  </div>
+</footer>
+<div id="disclaimer" class="bg-brand-darkest px-[5%] py-5">
+  <p class="text-[11px] text-[#3a2a1a] leading-relaxed font-light">The information provided on this website is intended for educational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the university does not guarantee its completeness or effectiveness. This website will be deactivated once the course is completed. Some images used on this site have been sourced from the internet and are included for educational and practice purposes only. The views expressed on this site do not necessarily reflect the official policies or positions of the university. By using this website, you acknowledge and agree to these terms.</p>
+</div>
+
+</body>
+</html>

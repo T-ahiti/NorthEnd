@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NorthEnd Cafe — Free Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#2c1a0e', darker: '#1a0f07', darkest: '#120a04',
+              gold: '#c58f52', goldhover: '#a87540', cream: '#f5e6c8',
+              bg: '#faf6f0', muted: '#9c8470', text: '#7a6355',
+              body: '#5a4030', border: '#e0d5c8', light: '#f0e8dc',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'DM Sans', sans-serif; background: #faf6f0; color: #2c1a0e; }
+    input:focus { border-color: #c58f52 !important; outline: none; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER (logo only — no nav on landing pages) -->
+<header class="bg-brand-dark py-4 flex justify-center">
+  <a href="index.html" class="font-serif text-brand-cream text-xl no-underline">NorthEnd Cafe</a>
+</header>
+
+<!-- HERO SPLIT -->
+<div class="bg-brand-dark grid grid-cols-1 md:grid-cols-2">
+  <div class="px-[8%] py-16">
+    <p class="text-brand-gold text-[11px] tracking-[3px] uppercase font-medium mb-5">Free download for remote workers</p>
+    <h1 class="font-serif text-brand-cream text-[40px] leading-tight mb-5">Finally: a no-fluff guide to getting <em class="text-brand-gold not-italic">real work done</em> at a coffee shop.</h1>
+    <p class="text-brand-muted text-[14px] leading-relaxed font-light mb-8 max-w-sm">Download the free <strong class="text-brand-gold font-medium">Remote Worker's Café Survival Guide</strong> — 8 pages of practical tips, productivity strategies, and insider advice.</p>
+    <div class="space-y-2.5">
+      <div class="flex items-center gap-3 text-brand-text text-[13px] font-light"><span class="text-brand-gold font-medium">✓</span> How to pick the right café for your work style</div>
+      <div class="flex items-center gap-3 text-brand-text text-[13px] font-light"><span class="text-brand-gold font-medium">✓</span> Best drinks for focus and deep work</div>
+      <div class="flex items-center gap-3 text-brand-text text-[13px] font-light"><span class="text-brand-gold font-medium">✓</span> A printable "perfect workday" checklist</div>
+      <div class="flex items-center gap-3 text-brand-text text-[13px] font-light"><span class="text-brand-gold font-medium">✓</span> How to protect your data on public Wi-Fi</div>
+    </div>
+  </div>
+  <div class="bg-brand-darker flex items-center justify-center p-12">
+    <div class="border border-brand-gold/35 p-9 max-w-[280px] relative">
+      <div class="absolute -top-3 left-6 bg-brand-gold text-white text-[9px] font-medium tracking-[2px] uppercase px-3 py-1">Free Download</div>
+      <h3 class="font-serif text-brand-cream text-[18px] leading-snug mb-3">The Remote Worker's Café Survival Guide</h3>
+      <p class="text-brand-text text-[12px] font-light leading-relaxed mb-4">How to Stay Productive, Caffeinated, and Sane While Working from Coffee Shops</p>
+      <div class="text-brand-gold text-[10px] font-medium tracking-wider uppercase border-t border-brand-gold/20 pt-3">8 pages · Free PDF · Instant access</div>
+    </div>
+  </div>
+</div>
+
+<!-- FORM (primary) -->
+<div class="bg-white px-[5%] py-16 text-center">
+  <h2 class="font-serif text-[30px] mb-2">Get instant access — completely free</h2>
+  <p class="text-brand-text text-[14px] font-light mb-10">Enter your details below and we'll send the guide straight to your inbox.</p>
+  <div class="max-w-[440px] mx-auto text-left">
+    <div class="mb-4">
+      <label class="block text-[10px] font-medium text-brand-text tracking-wider uppercase mb-2">First Name</label>
+      <input type="text" placeholder="Your first name" class="w-full border border-brand-border bg-brand-bg px-4 py-3.5 text-[14px] text-brand-dark font-light transition-colors">
+    </div>
+    <div class="mb-5">
+      <label class="block text-[10px] font-medium text-brand-text tracking-wider uppercase mb-2">Email Address</label>
+      <input type="email" placeholder="your@email.com" class="w-full border border-brand-border bg-brand-bg px-4 py-3.5 text-[14px] text-brand-dark font-light transition-colors">
+    </div>
+    <!-- On form submit → redirect to thankyou.html -->
+    <button onclick="window.location.href='thankyou.html'" class="w-full bg-brand-gold text-white text-[14px] font-medium tracking-wider uppercase py-4 cursor-pointer border-0 hover:bg-brand-goldhover transition-colors">Send Me the Guide →</button>
+    <p class="text-center text-[12px] text-brand-muted font-light mt-3">🔒 We respect your privacy. No spam, ever.</p>
+  </div>
+</div>
+
+<!-- WHAT'S INSIDE -->
+<div class="bg-brand-bg px-[5%] py-16">
+  <h2 class="font-serif text-[30px] text-center mb-10">What's inside the guide?</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="bg-white border border-brand-border p-6 flex gap-3.5 hover:border-brand-gold transition-colors"><div class="w-6 h-6 bg-brand-gold flex items-center justify-center text-white text-[12px] font-medium flex-shrink-0 mt-0.5">✓</div><div><h4 class="text-[13px] font-medium mb-1">Pick the right café</h4><p class="text-brand-text text-[12px] font-light leading-relaxed">Match your work style to the perfect café environment</p></div></div>
+    <div class="bg-white border border-brand-border p-6 flex gap-3.5 hover:border-brand-gold transition-colors"><div class="w-6 h-6 bg-brand-gold flex items-center justify-center text-white text-[12px] font-medium flex-shrink-0 mt-0.5">✓</div><div><h4 class="text-[13px] font-medium mb-1">Best drinks for focus</h4><p class="text-brand-text text-[12px] font-light leading-relaxed">What to order for deep work vs. creative sessions</p></div></div>
+    <div class="bg-white border border-brand-border p-6 flex gap-3.5 hover:border-brand-gold transition-colors"><div class="w-6 h-6 bg-brand-gold flex items-center justify-center text-white text-[12px] font-medium flex-shrink-0 mt-0.5">✓</div><div><h4 class="text-[13px] font-medium mb-1">Printable checklist</h4><p class="text-brand-text text-[12px] font-light leading-relaxed">The perfect café workday, step by step</p></div></div>
+    <div class="bg-white border border-brand-border p-6 flex gap-3.5 hover:border-brand-gold transition-colors"><div class="w-6 h-6 bg-brand-gold flex items-center justify-center text-white text-[12px] font-medium flex-shrink-0 mt-0.5">✓</div><div><h4 class="text-[13px] font-medium mb-1">Café etiquette tips</h4><p class="text-brand-text text-[12px] font-light leading-relaxed">How to be the customer baristas genuinely love</p></div></div>
+    <div class="bg-white border border-brand-border p-6 flex gap-3.5 hover:border-brand-gold transition-colors"><div class="w-6 h-6 bg-brand-gold flex items-center justify-center text-white text-[12px] font-medium flex-shrink-0 mt-0.5">✓</div><div><h4 class="text-[13px] font-medium mb-1">Wi-Fi security guide</h4><p class="text-brand-text text-[12px] font-light leading-relaxed">Simple steps to protect your data on public networks</p></div></div>
+    <div class="bg-white border border-brand-border p-6 flex gap-3.5 hover:border-brand-gold transition-colors"><div class="w-6 h-6 bg-brand-gold flex items-center justify-center text-white text-[12px] font-medium flex-shrink-0 mt-0.5">✓</div><div><h4 class="text-[13px] font-medium mb-1">How to become a regular</h4><p class="text-brand-text text-[12px] font-light leading-relaxed">Why loyalty to one café is your best productivity hack</p></div></div>
+  </div>
+</div>
+
+<!-- SECOND CTA -->
+<div class="bg-brand-dark px-[5%] py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+  <div>
+    <h2 class="font-serif text-brand-cream text-[32px] leading-snug mb-4">Still on the fence?</h2>
+    <p class="text-brand-muted text-[14px] font-light leading-relaxed">This guide is completely free. It takes 30 seconds to sign up. Thousands of remote workers have already downloaded it.</p>
+  </div>
+  <div>
+    <div class="mb-4">
+      <label class="block text-[10px] font-medium text-brand-text tracking-wider uppercase mb-2">First Name</label>
+      <input type="text" placeholder="Your first name" class="w-full border border-white/15 bg-brand-darker px-4 py-3.5 text-[14px] text-brand-cream font-light">
+    </div>
+    <div class="mb-5">
+      <label class="block text-[10px] font-medium text-brand-text tracking-wider uppercase mb-2">Email Address</label>
+      <input type="email" placeholder="your@email.com" class="w-full border border-white/15 bg-brand-darker px-4 py-3.5 text-[14px] text-brand-cream font-light">
+    </div>
+    <button onclick="window.location.href='thankyou.html'" class="w-full bg-brand-gold text-white text-[14px] font-medium tracking-wider uppercase py-4 cursor-pointer border-0 hover:bg-brand-goldhover transition-colors">Yes, Send Me the Guide →</button>
+  </div>
+</div>
+
+<!-- SOCIAL PROOF -->
+<div class="bg-brand-gold px-[5%] py-12">
+  <h3 class="font-serif text-white text-[22px] text-center mb-7">What readers are saying</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl mx-auto">
+    <div class="bg-white/15 border border-white/25 p-6">
+      <span class="text-white tracking-widest text-[12px] block mb-3">★★★★★</span>
+      <p class="text-white/90 text-[13px] italic font-light leading-relaxed mb-3">"This is exactly what I needed as a freelancer. Bookmarked the checklist immediately."</p>
+      <span class="text-white text-[11px] font-medium">— Priya S., UX Designer</span>
+    </div>
+    <div class="bg-white/15 border border-white/25 p-6">
+      <span class="text-white tracking-widest text-[12px] block mb-3">★★★★★</span>
+      <p class="text-white/90 text-[13px] italic font-light leading-relaxed mb-3">"Short, useful, no filler. Rare these days. Sent it to my whole remote team."</p>
+      <span class="text-white text-[11px] font-medium">— James T., Startup Founder</span>
+    </div>
+  </div>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="bg-brand-darkest px-[5%] py-6">
+  <p class="text-[11px] text-[#3a2a1a] leading-relaxed font-light">The information provided on this website is intended for educational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the university does not guarantee its completeness or effectiveness. This website will be deactivated once the course is completed. Some images used on this site have been sourced from the internet and are included for educational and practice purposes only. If you are the copyright owner of any image and believe it has been used without proper attribution, please contact us. The views expressed on this site do not necessarily reflect the official policies or positions of the university. The university is not responsible for any errors or omissions or the results obtained from using this information. By using this website, you acknowledge and agree to these terms.</p>
+</div>
+
+</body>
+</html>

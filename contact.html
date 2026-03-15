@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NorthEnd Cafe — Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#2c1a0e', darker: '#1a0f07', darkest: '#120a04',
+              gold: '#c58f52', goldhover: '#a87540', cream: '#f5e6c8',
+              bg: '#faf6f0', muted: '#9c8470', text: '#7a6355',
+              body: '#5a4030', border: '#e0d5c8', light: '#f0e8dc',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'DM Sans', sans-serif; background: #faf6f0; color: #2c1a0e; }
+    input, select, textarea { outline: none; }
+    input:focus, select:focus, textarea:focus { border-color: #c58f52 !important; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="bg-brand-dark sticky top-0 z-50 flex items-center justify-between px-[5%] h-[60px]">
+  <a href="index.html" class="font-serif text-brand-cream text-xl tracking-wide no-underline">NorthEnd Cafe</a>
+  <ul class="hidden md:flex gap-8 list-none">
+    <li><a href="index.html"   class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Home</a></li>
+    <li><a href="about.html"   class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">About</a></li>
+    <li><a href="menu.html"    class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Menu</a></li>
+    <li><a href="blog.html"    class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Blog</a></li>
+    <li><a href="contact.html" class="text-brand-gold  text-[11px] font-medium tracking-widest uppercase no-underline">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="bg-brand-dark px-[5%] pt-16 pb-0">
+  <p class="text-brand-gold text-[11px] tracking-[3px] uppercase font-medium mb-4">Get in touch</p>
+  <h1 class="font-serif text-brand-cream text-5xl leading-tight mb-4">We'd love to<br>hear from you.</h1>
+  <p class="text-brand-muted text-[15px] leading-relaxed max-w-md font-light pb-12">Questions about membership, event bookings, or just want to say hello — we're always happy to chat.</p>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<!-- Replace this div with a Google Maps iframe:
+     Go to maps.google.com → search address → Share → Embed a map → copy iframe -->
+<div class="w-full h-48 flex items-center justify-center text-[#4a6a3a] text-[13px] font-medium" style="background: linear-gradient(135deg,#c8d8c0,#a8c498)">
+  📍 742 Brewster Avenue, Toronto — Replace with Google Maps embed iframe
+</div>
+
+<!-- CONTACT BODY -->
+<div class="grid grid-cols-1 md:grid-cols-[320px_1fr]">
+
+  <!-- Info -->
+  <div class="bg-white px-9 py-12 border-r border-brand-border">
+    <span class="text-brand-gold text-[10px] tracking-[2px] uppercase font-medium block mb-7">Find us</span>
+    <div class="mb-7 pb-7 border-b border-brand-light">
+      <h4 class="text-[10px] tracking-widest uppercase text-brand-text font-medium mb-2">Address</h4>
+      <p class="text-[14px] leading-relaxed font-light">742 Brewster Avenue<br>Toronto, ON, M5T 1A3</p>
+    </div>
+    <div class="mb-7 pb-7 border-b border-brand-light">
+      <h4 class="text-[10px] tracking-widest uppercase text-brand-text font-medium mb-2">Phone</h4>
+      <p class="text-[14px] font-light">(416) 555-0194</p>
+    </div>
+    <div class="mb-7 pb-7 border-b border-brand-light">
+      <h4 class="text-[10px] tracking-widest uppercase text-brand-text font-medium mb-2">Email</h4>
+      <p class="text-[14px] font-light">hello@northendcafe.com</p>
+    </div>
+    <div class="flex gap-2.5 pt-7 border-t border-brand-light">
+      <a href="#" class="w-10 h-10 bg-brand-dark flex items-center justify-center text-brand-gold text-[11px] font-bold no-underline hover:bg-brand-gold hover:text-white transition-colors">In</a>
+      <a href="#" class="w-10 h-10 bg-brand-dark flex items-center justify-center text-brand-gold text-[11px] font-bold no-underline hover:bg-brand-gold hover:text-white transition-colors">Fb</a>
+      <a href="#" class="w-10 h-10 bg-brand-dark flex items-center justify-center text-brand-gold text-[11px] font-bold no-underline hover:bg-brand-gold hover:text-white transition-colors">Tk</a>
+      <a href="#" class="w-10 h-10 bg-brand-dark flex items-center justify-center text-brand-gold text-[11px] font-bold no-underline hover:bg-brand-gold hover:text-white transition-colors">𝕏</a>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="px-11 py-12 bg-brand-bg">
+    <span class="text-brand-gold text-[10px] tracking-[2px] uppercase font-medium block mb-7">Send us a message</span>
+    <div class="mb-4">
+      <label class="block text-[10px] font-medium text-brand-text tracking-wider uppercase mb-2">Full Name</label>
+      <input type="text" placeholder="Your full name" class="w-full border border-brand-border bg-white px-4 py-3 text-[14px] text-brand-dark font-light transition-colors">
+    </div>
+    <div class="mb-4">
+      <label class="block text-[10px] font-medium text-brand-text tracking-wider uppercase mb-2">Email Address</label>
+      <input type="email" placeholder="your@email.com" class="w-full border border-brand-border bg-white px-4 py-3 text-[14px] text-brand-dark font-light transition-colors">
+    </div>
+    <div class="mb-4">
+      <label class="block text-[10px] font-medium text-brand-text tracking-wider uppercase mb-2">Subject</label>
+      <select class="w-full border border-brand-border bg-white px-4 py-3 text-[14px] text-brand-dark font-light appearance-none transition-colors">
+        <option value="">Select a subject…</option>
+        <option>General Inquiry</option>
+        <option>Membership Question</option>
+        <option>Event Booking</option>
+        <option>Press / Media</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="mb-4">
+      <label class="block text-[10px] font-medium text-brand-text tracking-wider uppercase mb-2">Message</label>
+      <textarea rows="5" placeholder="How can we help you?" class="w-full border border-brand-border bg-white px-4 py-3 text-[14px] text-brand-dark font-light resize-y transition-colors"></textarea>
+    </div>
+    <button class="w-full bg-brand-gold text-white text-[13px] font-medium tracking-wider uppercase py-4 hover:bg-brand-goldhover transition-colors cursor-pointer border-0">Send Message →</button>
+  </div>
+</div>
+
+<!-- HOURS -->
+<div class="bg-brand-dark px-[5%] py-7 flex flex-wrap gap-10">
+  <div><h4 class="text-brand-gold text-[10px] tracking-[2px] uppercase font-medium mb-1.5">Weekdays</h4><p class="text-brand-muted text-[14px] font-light">Monday – Friday: 7:00 am – 8:00 pm</p></div>
+  <div><h4 class="text-brand-gold text-[10px] tracking-[2px] uppercase font-medium mb-1.5">Weekends</h4><p class="text-brand-muted text-[14px] font-light">Saturday – Sunday: 8:00 am – 7:00 pm</p></div>
+  <div><h4 class="text-brand-gold text-[10px] tracking-[2px] uppercase font-medium mb-1.5">Holidays</h4><p class="text-brand-muted text-[14px] font-light">Hours may vary — check our Instagram</p></div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-brand-darker px-[5%] py-7 flex flex-col md:flex-row justify-between items-center gap-4">
+  <div class="font-serif text-brand-cream text-base">NorthEnd Cafe</div>
+  <div class="flex gap-6">
+    <a href="index.html"  class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Home</a>
+    <a href="about.html"  class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">About</a>
+    <a href="#disclaimer" class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Disclaimer</a>
+  </div>
+</footer>
+<div id="disclaimer" class="bg-brand-darkest px-[5%] py-5">
+  <p class="text-[11px] text-[#3a2a1a] leading-relaxed font-light">The information provided on this website is intended for educational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the university does not guarantee its completeness or effectiveness. This website will be deactivated once the course is completed. Some images used on this site have been sourced from the internet and are included for educational and practice purposes only. The views expressed on this site do not necessarily reflect the official policies or positions of the university. By using this website, you acknowledge and agree to these terms.</p>
+</div>
+
+</body>
+</html>
