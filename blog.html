@@ -41,7 +41,21 @@
     <li><a href="contact.html" class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Contact</a></li>
   </ul>
 </nav>
-
+  <!-- Hamburger button (mobile only) -->
+  <button id="menu-btn" class="md:hidden flex flex-col gap-[5px] p-2 cursor-pointer bg-transparent border-0" onclick="toggleMenu()">
+    <span id="bar1" class="block w-5 h-[1.5px] bg-brand-cream transition-all duration-300"></span>
+    <span id="bar2" class="block w-5 h-[1.5px] bg-brand-cream transition-all duration-300"></span>
+    <span id="bar3" class="block w-5 h-[1.5px] bg-brand-cream transition-all duration-300"></span>
+  </button>
+</nav>
+<!-- Mobile menu -->
+<div id="mobile-menu" class="hidden bg-brand-darker border-t border-white/10 md:hidden">
+  <a href="index.html" class="block px-[5%] py-3.5 text-brand-muted text-[12px] font-medium tracking-widest uppercase no-underline border-b border-white/5 hover:text-brand-cream hover:bg-white/5 transition-colors">Home</a>
+  <a href="about.html" class="block px-[5%] py-3.5 text-brand-muted text-[12px] font-medium tracking-widest uppercase no-underline border-b border-white/5 hover:text-brand-cream hover:bg-white/5 transition-colors">About</a>
+  <a href="menu.html" class="block px-[5%] py-3.5 text-brand-muted text-[12px] font-medium tracking-widest uppercase no-underline border-b border-white/5 hover:text-brand-cream hover:bg-white/5 transition-colors">Menu</a>
+  <a href="blog.html" class="block px-[5%] py-3.5 text-brand-muted text-[12px] font-medium tracking-widest uppercase no-underline border-b border-white/5 hover:text-brand-cream hover:bg-white/5 transition-colors">Blog</a>
+  <a href="contact.html" class="block px-[5%] py-3.5 text-brand-muted text-[12px] font-medium tracking-widest uppercase no-underline border-b border-white/5 hover:text-brand-cream hover:bg-white/5 transition-colors">Contact</a>
+</div>
 <!-- PAGE HERO -->
 <section class="bg-brand-dark px-[5%] py-16">
   <p class="text-brand-gold text-[11px] tracking-[3px] uppercase font-medium mb-4">The NorthEnd Cafe blog</p>
