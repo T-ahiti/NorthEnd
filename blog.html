@@ -66,7 +66,7 @@
           <span class="text-brand-muted text-[12px] font-light">March 2025</span>
           <span class="text-brand-muted text-[12px] font-light">· 6 min read</span>
         </div>
-        <!-- Keywords box (for assignment grading) -->
+        <!-- Keywords box -->
         <div class="bg-brand-bg border border-brand-border px-4 py-3 mb-4 flex flex-wrap gap-2 items-center">
           <span class="text-[10px] text-brand-muted tracking-wider uppercase font-medium mr-1">Keywords:</span>
           <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">specialty coffee brewing</span>
@@ -75,8 +75,8 @@
           <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">coffee brewing methods</span>
           <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">best coffee for beginners</span>
         </div>
-        <h2 class="font-serif text-[24px] leading-snug mb-4 hover:text-brand-gold transition-colors cursor-pointer">The Beginner's Guide to Brewing Specialty Coffee at Home (Without Any Fancy Equipment)</h2>
-        <p class="text-brand-text text-[14px] leading-relaxed font-light mb-6">You've had that cup — the one that stopped you mid-sip and made you think, wait, coffee can actually taste like this? With a few simple principles and basic tools, you can brew specialty-level coffee at home. This guide shows you exactly how.</p>
+        <a href="blog-post-1.html" class="font-serif text-[24px] leading-snug mb-4 hover:text-brand-gold transition-colors cursor-pointer">The Beginner's Guide to Brewing Specialty Coffee at Home (Without Any Fancy Equipment)</a> <br>
+        <a href="blog-post-1.html" class="text-brand-text text-[14px] leading-relaxed font-light mb-6">You've had that cup — the one that stopped you mid-sip and made you think, wait, coffee can actually taste like this? With a few simple principles and basic tools, you can brew specialty-level coffee at home. This guide shows you exactly how.</a>
         <div class="flex flex-wrap justify-between items-center pt-4 border-t border-brand-light gap-3">
           <div class="flex flex-wrap gap-2">
             <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Brewing</span>
@@ -107,8 +107,8 @@
           <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">work from coffee shop</span>
           <span class="text-[11px] text-brand-gold border border-brand-gold/40 bg-brand-gold/5 px-2.5 py-1">best café for working</span>
         </div>
-        <h2 class="font-serif text-[24px] leading-snug mb-4 hover:text-brand-gold transition-colors cursor-pointer">7 Things Productive Remote Workers Always Do at a Coffee Shop (That Most People Don't)</h2>
-        <p class="text-brand-text text-[14px] leading-relaxed font-light mb-6">If you've ever set up your laptop at a café with full intentions of crushing your to-do list - only to close it two hours later with nothing done - you are not alone. Here's what the most productive café workers actually do differently.</p>
+        <a href="blog-post-2.html" class="font-serif text-[24px] leading-snug mb-4 hover:text-brand-gold transition-colors cursor-pointer">7 Things Productive Remote Workers Always Do at a Coffee Shop (That Most People Don't)</a> <br>
+        <a href="blog-post-2.html" class="text-brand-text text-[14px] leading-relaxed font-light mb-6">If you've ever set up your laptop at a café with full intentions of crushing your to-do list - only to close it two hours later with nothing done - you are not alone. Here's what the most productive café workers actually do differently.</a>
         <div class="flex flex-wrap justify-between items-center pt-4 border-t border-brand-light gap-3">
           <div class="flex flex-wrap gap-2">
             <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text hover:border-brand-gold hover:text-brand-gold transition-colors cursor-pointer">Remote Work</span>
@@ -174,5 +174,25 @@
   <p class="text-[11px] text-[#967259] leading-relaxed font-light">The information provided on this website is intended for educational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the university does not guarantee its completeness or effectiveness. This website will be deactivated once the course is completed. Some images used on this site have been sourced from the internet and are included for educational and practice purposes only. The views expressed on this site do not necessarily reflect the official policies or positions of the university. By using this website, you acknowledge and agree to these terms.</p>
 </div>
 
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById('mobile-menu');
+    var bar1 = document.getElementById('bar1');
+    var bar2 = document.getElementById('bar2');
+    var bar3 = document.getElementById('bar3');
+    var isOpen = !menu.classList.contains('hidden');
+    if (isOpen) {
+      menu.classList.add('hidden');
+      bar1.style.transform = '';
+      bar2.style.opacity = '1';
+      bar3.style.transform = '';
+    } else {
+      menu.classList.remove('hidden');
+      bar1.style.transform = 'translateY(6.5px) rotate(45deg)';
+      bar2.style.opacity = '0';
+      bar3.style.transform = 'translateY(-6.5px) rotate(-45deg)';
+    }
+  }
+</script>
 </body>
 </html>
