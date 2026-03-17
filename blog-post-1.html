@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Beginner's Guide to Brewing Specialty Coffee at Home — NorthEnd Cafe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#2c1a0e', darker: '#1a0f07', darkest: '#120a04',
+              gold: '#c58f52', goldhover: '#a87540', cream: '#f5e6c8',
+              bg: '#faf6f0', muted: '#9c8470', text: '#7a6355',
+              body: '#5a4030', border: '#e0d5c8', light: '#f0e8dc',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans:  ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'DM Sans', sans-serif; background: #faf6f0; color: #2c1a0e; }
+    .article-body p { margin-bottom: 1.4rem; }
+    .article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; margin: 2.4rem 0 1rem; color: #2c1a0e; }
+    .article-body h3 { font-size: 1.1rem; font-weight: 500; margin: 1.8rem 0 0.7rem; color: #2c1a0e; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="bg-brand-dark sticky top-0 z-50 flex items-center justify-between px-[5%] h-[60px]">
+  <a href="index.html" class="font-serif text-brand-cream text-xl tracking-wide no-underline">NorthEnd Cafe</a>
+  <ul class="hidden md:flex gap-8 list-none">
+    <li><a href="index.html"   class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Home</a></li>
+    <li><a href="about.html"   class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">About</a></li>
+    <li><a href="menu.html"    class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Menu</a></li>
+    <li><a href="blog.html"    class="text-brand-gold  text-[11px] font-medium tracking-widest uppercase no-underline">Blog</a></li>
+    <li><a href="contact.html" class="text-brand-muted text-[11px] font-medium tracking-widest uppercase no-underline hover:text-brand-cream transition-colors">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ARTICLE HERO -->
+<section class="bg-brand-dark px-[5%] pt-14 pb-12">
+  <a href="blog.html" class="text-brand-gold text-[11px] tracking-widest uppercase font-medium no-underline hover:text-brand-cream transition-colors mb-6 inline-block">← Back to Blog</a>
+  <div class="flex flex-wrap gap-3 items-center mb-5">
+    <span class="bg-brand-gold/20 text-brand-gold text-[10px] px-3 py-1.5 tracking-wider uppercase font-medium">Coffee Education</span>
+    <span class="text-brand-muted text-[12px] font-light">March 2025</span>
+    <span class="text-brand-muted text-[12px] font-light">· 6 min read</span>
+  </div>
+  <h1 class="font-serif text-brand-cream text-4xl md:text-5xl leading-tight max-w-3xl mb-6">The Beginner's Guide to Brewing Specialty Coffee at Home (Without Any Fancy Equipment)</h1>
+
+  <!-- KEYWORDS BOX -->
+  <div class="bg-white/5 border border-brand-gold/20 px-5 py-3 inline-flex flex-wrap gap-2 items-center">
+    <span class="text-[10px] text-brand-muted tracking-wider uppercase font-medium mr-1">Target keywords:</span>
+    <span class="text-[11px] text-brand-gold border border-brand-gold/40 px-2.5 py-1">specialty coffee brewing</span>
+    <span class="text-[11px] text-brand-gold border border-brand-gold/40 px-2.5 py-1">how to brew coffee at home</span>
+    <span class="text-[11px] text-brand-gold border border-brand-gold/40 px-2.5 py-1">pour-over coffee guide</span>
+    <span class="text-[11px] text-brand-gold border border-brand-gold/40 px-2.5 py-1">coffee brewing methods</span>
+    <span class="text-[11px] text-brand-gold border border-brand-gold/40 px-2.5 py-1">best coffee for beginners</span>
+  </div>
+</section>
+
+<!-- FEATURED IMAGE -->
+
+<div class="w-full h-64 flex items-center justify-center text-white/30 text-[12px] tracking-widest uppercase" style="background:linear-gradient(135deg,#1a0f07,#3a2010,#c58f52)">
+<img src="assets/pour on coffee.jpg" class="w-full h-72 object-cover" alt="Pour over coffee"> 
+</div>
+
+<!-- ARTICLE + SIDEBAR LAYOUT -->
+<div class="px-[5%] py-14 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-14">
+
+  <!-- ARTICLE BODY -->
+  <article class="article-body text-brand-body text-[15px] leading-[1.85] font-light max-w-2xl">
+
+    <p>You've had that cup. The one that stopped you mid-sip and made you think, <em>wait - coffee can taste like this?</em> Maybe it was a floral Ethiopian pour-over at a local café, or a silky flat white you couldn't stop thinking about. Whatever it was, it changed the way you look at your morning routine.</p>
+
+    <p>The good news: that kind of coffee isn't magic, and it isn't reserved for baristas with expensive machines. With a few simple principles and some basic tools, you can brew specialty-level coffee at home and this guide will show you exactly how.</p>
+
+    <h2>What makes specialty coffee different?</h2>
+
+    <p>Before we get into brewing, it's worth understanding what "specialty coffee" means. The Specialty Coffee Association (SCA) defines specialty coffee as coffee that scores 80 points or above on a 100-point scale, based on factors like aroma, flavour, aftertaste, acidity, body, and balance. In practice, this means the beans were grown with care, harvested at peak ripeness, processed thoughtfully, and roasted to highlight their natural flavours, not to hide defects behind a dark roast.</p>
+
+    <p>The coffee you find at most chain cafés is commodity coffee: consistent, affordable, but designed for mass production rather than nuance. Specialty coffee is the opposite - it celebrates the individuality of a bean's origin, just like wine celebrates terroir.</p>
+
+    <h2>The single biggest upgrade you can make: fresh beans</h2>
+
+    <p>If you take one thing from this guide, let it be this: freshness matters more than equipment. Coffee begins to lose its flavour compounds within days of roasting. Pre-ground coffee loses them within 30 minutes of grinding.</p>
+
+    <p>Seek out a local roaster or specialty café that sells whole beans with a roast date on the bag. Look for beans roasted within the last two to four weeks. Avoid anything that only shows a "best by" date- that's a red flag.</p>
+
+    <h2>The four variables every home brewer should understand</h2>
+
+    <p>Great coffee is the result of four things working together. Understanding these will help you troubleshoot any cup that doesn't taste quite right.</p>
+
+    <h3>1. Grind size</h3>
+    <p>The size of your coffee grounds controls how quickly water extracts flavour from them. Too fine = over-extraction = bitter, harsh coffee. Too coarse = under-extraction = weak, sour, flat coffee. Every brewing method has a sweet spot grind size, and dialling it in is the most impactful adjustment you can make.</p>
+
+    <h3>2. Water temperature</h3>
+    <p>Water that is too hot (over 96°C / 205°F) scorches the grounds and extracts bitter compounds. Water that is too cool (under 88°C / 190°F) won't extract enough. A simple rule: boil your kettle and wait 30 seconds before pouring.</p>
+
+    <h3>3. Coffee-to-water ratio</h3>
+    <p>The standard starting point is a 1:15 ratio — one gram of coffee for every 15 grams (or millilitres) of water. For a 300ml cup, use 20 grams of coffee. Adjust up or down by taste. A kitchen scale makes this easy and takes the guesswork out entirely.</p>
+
+    <h3>4. Brew time</h3>
+    <p>Different methods have different ideal extraction times. A French press takes 4 minutes. A pour-over takes 3–4 minutes total. An espresso shot takes 25–30 seconds. Straying too far outside these windows is almost always the culprit behind a disappointing cup.</p>
+
+    <h2>Three beginner friendly brewing methods</h2>
+
+    <h3>The French Press (easiest entry point)</h3>
+    <p>The French press is forgiving, affordable (usually $20–40), and produces a full-bodied, rich cup. Use a coarse grind (like sea salt), a 1:15 ratio, water at about 93°C, and steep for exactly 4 minutes before pressing slowly. The key mistake most beginners make: pressing too fast, which agitates the grounds and creates bitterness. Press gently and steadily over about 30 seconds.</p>
+
+    <h3>The Pour-Over (the barista's favourite)</h3>
+    <p>Pour-over coffee: using a Hario V60, Chemex, or similar dripper gives you incredible clarity and lets the bean's natural flavours shine. It takes a little practice, but the reward is worth it. Use a medium-fine grind, pre-wet (bloom) your grounds for 30 seconds with twice their weight in water, then pour in slow, steady circles. The total brew time should be between 3 and 4 minutes. If it's running faster, grind finer. If slower, grind coarser.</p>
+
+    <h3>The AeroPress (the traveller's tool)</h3>
+    <p>The AeroPress is compact, quick, and nearly impossible to break. It's become a cult favourite among coffee travellers and experimenters. Use a fine-to-medium grind, steep for 1.5–2 minutes, and press slowly. It produces a concentrated cup similar to espresso that you can dilute with hot water or enjoy straight. The AeroPress is also forgiving, even imprecise brewing tends to produce decent results, making it ideal for beginners.</p>
+
+    <h2>A note on water</h2>
+
+    <p>Water makes up about 98% of your cup, and yet most people never think about it. If your tap water tastes fine on its own, it will likely brew decent coffee. If it tastes strongly of chlorine or minerals, consider a filtered jug or bottled water with low mineral content (around 150 mg/L total dissolved solids is ideal for specialty coffee brewing).</p>
+
+    <h2>Start simple, then experiment</h2>
+
+    <p>The biggest mistake new home brewers make is changing too many variables at once. Start with one brewing method, stick to a consistent recipe for a week, then adjust one thing: grind size, ratio, or temperature and note the difference. Coffee brewing is a practice, not a formula.</p>
+
+    <p>You don't need a $500 grinder or a gooseneck kettle to start brewing great coffee at home. You need fresh beans, a method you enjoy, and a little patience with the process.</p>
+
+    <p>And if you ever want to see these techniques in action, or taste the difference that proper brewing makes, come visit us at NorthEnd Cafe. Our baristas love talking coffee as much as they love making it.</p>
+
+    <!-- CTA for all blog posts -->
+    <div class="bg-brand-dark p-8 mt-10">
+      <p class="text-brand-gold text-[10px] tracking-[3px] uppercase font-medium mb-2">Free download</p>
+      <h3 class="font-serif text-brand-cream text-2xl mb-3">Ready to take your café knowledge further?</h3>
+      <p class="text-brand-muted text-[14px] font-light leading-relaxed mb-6">Download our free Remote Worker's Café Survival Guide: it includes a handy coffee tasting cheat sheet, drink recommendations for focus and creativity, and a printable workday checklist.</p>
+      <a href="landing.html" class="inline-block bg-brand-gold text-white text-[13px] font-medium tracking-wider uppercase px-8 py-4 no-underline hover:bg-brand-goldhover transition-colors">Download the Free Guide →</a>
+    </div>
+
+    <!-- TAGS -->
+    <div class="mt-8 flex flex-wrap gap-2">
+      <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text">Brewing</span>
+      <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text">Pour-over</span>
+      <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text">French Press</span>
+      <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text">Beginner</span>
+      <span class="text-[11px] px-3 py-1.5 border border-brand-border text-brand-text">Specialty Coffee</span>
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="space-y-8 mt-2">
+
+    <!-- About the café -->
+    <div class="bg-brand-dark p-7">
+      <h4 class="font-serif text-brand-cream text-[17px] mb-3">About NorthEnd Cafe</h4>
+      <p class="text-brand-muted text-[13px] font-light leading-relaxed mb-5">We're Toronto's favourite creative café: specialty coffee, artisan pastries, and a workspace built for remote workers.</p>
+      <a href="about.html" class="text-brand-gold text-[12px] font-medium no-underline hover:text-brand-goldhover transition-colors">Learn more about us →</a>
+    </div>
+
+    <!-- Free guide CTA -->
+    <div class="border border-brand-border bg-white p-6">
+      <p class="text-brand-gold text-[10px] tracking-[2px] uppercase font-medium mb-3">Free resource</p>
+      <h4 class="font-serif text-[17px] mb-3">The Remote Worker's Café Survival Guide</h4>
+      <p class="text-brand-text text-[13px] font-light leading-relaxed mb-5">8 pages of practical tips for working productively from coffee shops- completely free.</p>
+      <a href="landing.html" class="block bg-brand-gold text-white text-center text-[12px] font-medium tracking-wider uppercase py-3 no-underline hover:bg-brand-goldhover transition-colors">Download Free →</a>
+    </div>
+
+    <!-- Also read -->
+    <div>
+      <p class="text-brand-gold text-[10px] tracking-[2px] uppercase font-medium mb-4 pb-3 border-b border-brand-border block">Also on the blog</p>
+      <a href="blog-post-2.html" class="flex gap-3.5 group no-underline">
+        <div class="w-[52px] h-[52px] flex-shrink-0" style="background:url(assets/remote-worker.jpg) no-repeat center/cover"></div>
+        <div>
+          <h5 class="text-[13px] font-medium leading-snug text-brand-dark group-hover:text-brand-gold transition-colors">7 Things Productive Remote Workers Always Do at a Coffee Shop</h5>
+          <span class="text-[11px] text-brand-muted font-light">Productivity · 7 min</span>
+        </div>
+      </a>
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-brand-darker px-[5%] py-7 flex flex-col md:flex-row justify-between items-center gap-4">
+  <div class="font-serif text-brand-cream text-base">NorthEnd Cafe</div>
+  <div class="flex gap-6">
+    <a href="index.html"   class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Home</a>
+    <a href="blog.html"    class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Blog</a>
+    <a href="contact.html" class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Contact</a>
+    <a href="#disclaimer"  class="text-[#5a4a3a] text-[12px] no-underline hover:text-brand-gold transition-colors">Disclaimer</a>
+  </div>
+</footer>
+<div id="disclaimer" class="bg-brand-darkest px-[5%] py-5">
+  <p class="text-[11px] text-[#3a2a1a] leading-relaxed font-light">The information provided on this website is intended for educational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the university does not guarantee its completeness or effectiveness. This website will be deactivated once the course is completed. Some images used on this site have been sourced from the internet and are included for educational and practice purposes only. The views expressed on this site do not necessarily reflect the official policies or positions of the university. By using this website, you acknowledge and agree to these terms.</p>
+</div>
+
+</body>
+</html>
